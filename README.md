@@ -1,25 +1,30 @@
-![github-shield]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+[![Pull][pr]][pr-url]
 [![Issues][issues]][issues-url]
+[![Size][repo]][repo-url]
+[![Last][last]][last-url]
+[![Contributors][contributors]][contributors-url]
 [![License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+![github-shield]
 
 <br />
 <p align="center">
   <a href="https://github.com/shridpant/stockie">
     <img src="static/readme/title_icon.png" alt="Logo" width="200" height="75">
   </a>
-  
   <h3 align="center">Stockie</h3>
-
   <p align="center">
     Welcome to the GitHub repository of Stokie!
     <br />
     <a href="https://github.com/shridpant/stockie/blob/main/README.md"><strong>Explore the docs »</strong></a>
     <br />
-    <br />
-    <a href="https://github.com/shridpant/stockie/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/shridpant/stockie/wiki">Wiki</a>
     ·
     <a href="https://github.com/shridpant/stockie/issues">Request Feature</a>
+    ·
+    <a href="https://github.com/shridpant/stockie/issues">Report Bug</a>
+    ·
   </p>
 </p>
 
@@ -41,11 +46,11 @@
 
 [![Product Name Screenshot][product-screenshot]](https://github.com/shridpant/stockie)
 
-This repository contains the source code for *Stockie*- an investment portfolio management web application. The state-of-the-art recommendation engine provides real-time personalized insights for its users. Analysis of tweets, relevant news, the stocks' historic performances and many other parameters are evaluated for *the most up-to-date* insights.
+This repository contains the source code for *Stockie*- an investment portfolio management web application. The state-of-the-art analysis tools provide real-time insights for its users. Analysis of tweets, relevant news, the stocks' historic performances and many other parameters are evaluated for *the most up-to-date* insights.
 
 ### Built With
 
-The server-side application was built with Flask and Socket.IO. Other resources included SQLite3 for database management, and HTML, CSS and JavaScript for the client-side application. Stockie was made possible by [many](#acknowledements) open-sourced libraries and frameworks.
+The server-side application was built with Flask. Other resources included SQLite3 for database management, and HTML, CSS and JavaScript for the client-side application. Stockie was made possible by [many](#acknowledements) open-sourced libraries and frameworks.
 
 ### Usage
 
@@ -53,18 +58,9 @@ The web interface is simple and easy to use. After a one-step registration proce
 
 1. Clone this repository with git clone `https://github.com/shridpant/stockie`.
 2. Navigate to the root folder of the project and execute `pip install -r requirements.txt` to install all dependencies.
-3. Author _keys.json_ on the root folder of the project with relevant keys from _IEX_, _News API_ and _Twitter_. Follow the format:
-> {
->    "IEX" : "",
->    "CONSUMER_KEY" : "",
->    "CONSUMER_SECRET" : "",
->    "ACCESS_KEY" : "",
->    "ACCESS_SECRET" : "",
->    "news" : ""
->}
+3. Author _keys.json_ on the root folder of the project with relevant keys from _IEX_, _News API_ and _Twitter_. Learn more about _keys.json_ [here](https://github.com/shridpant/stockie/wiki/Get-Keys).
 4. Start your server with `python app.py`.
 5. Open the address from your terminal on your browser. And you're all set!
-
 ## Features
 
 Stockie provides state-of-the-art *stock analysis tools* to its users. This includes up-to-date performance metrics from trusted sources, real-time tweet and news insights, and a recommender engine based on the stocks' historic data. An example of the insights:
@@ -81,7 +77,7 @@ The users may connect with one another to engage in relevant discussions. Each u
 
 ## Contributing
 
-This project welcomes contributions and suggestions. Feel free to fork this repository or submit your ideas through [issues](https://github.com/shridpant/stockie/issues).
+This project welcomes contributions and suggestions. Feel free to fork this repository or submit your ideas through [issues](https://github.com/shridpant/stockie/issues). Please carefully read and follow the [Contributor Covenant Code of Conduct](https://github.com/shridpant/stockie/blob/main/CODE_OF_CONDUCT.md) while participating in this project.
 
 <!-- LICENSE -->
 ## License
@@ -102,16 +98,26 @@ Stockie wouldn't be possible without the following resources:
 * [yfinance](https://github.com/ranaroussi/yfinance)
 * [IEX](https://iextrading.com/developer)
 * [News API](https://newsapi.org/)
-* [CS50](https://cs50.harvard.edu/)
 * [Chart.js](https://www.chartjs.org/)
 * [Flask](https://flask.palletsprojects.com/en/1.1.x/)
-* [Jupyter Notebook](https://jupyter.org/)
 * [Bootstrap](https://getbootstrap.com)
+* [CS50](https://cs50.harvard.edu/)
+* [Jupyter Notebook](https://jupyter.org/)
 * [JQuery](https://jquery.com)
 * [Google Fonts](https://fonts.google.com/)
 * [Img Shields](https://shields.io)
+* [Screely](https://www.screely.com/)
+* [Freepik from Flaticon.com](https://www.flaticon.com/authors/freepik)
 
 <!-- MARKDOWN LINKS & IMAGES -->
+[pr]: https://img.shields.io/github/issues-pr/shridpant/stockie
+[pr-url]: https://github.com/shridpant/stockie/pulls
+[repo]: https://img.shields.io/github/repo-size/shridpant/stockie
+[repo-url]: https://github.com/shridpant/stockie
+[last]: https://img.shields.io/github/last-commit/shridpant/stockie
+[last-url]: https://github.com/shridpant/stockie/commits/main
+[contributors]: https://img.shields.io/github/contributors/shridpant/stockie
+[contributors-url]: https://github.com/shridpant/stockie/graphs/contributors
 [issues]: https://img.shields.io/github/issues-raw/shridpant/stockie
 [issues-url]: https://github.com/shridpant/stockie/issues
 [license-shield]: https://img.shields.io/apm/l/vim-mode

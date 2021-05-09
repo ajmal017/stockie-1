@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Buy
+{% endblock %}
+
+{% block main %}
+{% if stock_list is defined %}
+    <form action="/trade/sell" method="post">
+        <div class="form-group">
+            <select autofocus class="form-control" name="symbol">
+            {% for stock in stock_list %}
+                <option value="{{ stock['symbol'] }}">{{ stock['symbol'] }}</option>
+            {% endfor %}
+            </select><br /><br />
+            <input autocomplete="off" autofocus class="form-control" name="number" placeholder="Number of Stocks" type="number">
+        </div>
+        <button class="btn btn-primary" type="submit">Sell</button>
+    </form>
+{% else %}
+<p class="small text-center text-muted">You don't own any stocks yet. Follow the documentation to <a href="https://github.com/shridpant/stockie" target="_blank">learn more</a>.</p>
+{% endif %}
+{% endblock %}
+
+{% block footer %}
+<footer class="small text-center text-muted">
+    Data provided for free by <a href="https://iextrading.com/developer">IEX</a>. View <a href="https://iextrading.com/api-exhibit-a/">IEX’s Terms of Use</a>.
+</footer>
+{% endblock %}
